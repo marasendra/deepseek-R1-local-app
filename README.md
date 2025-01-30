@@ -25,7 +25,7 @@ A **100% local chatbot app** powered by **DeepSeek-R1** (via Ollama) and built w
 - Chainlit
 - Ollama Client
 
-  ### Steps
+## Steps
 1. Clone the repository:
    ```bash
    git clone https://github.com/marasendra/deepseek-R1-local-app.git
