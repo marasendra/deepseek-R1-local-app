@@ -1,0 +1,10 @@
+[project]
+name = "deepseek-r1-local-app"
+version = "0.1.0"
+description = "A 100% local chatbot app powered by DeepSeek-R1 (via Ollama) and built with Chainlit for an intuitive chat interface"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chainlit>=2.1.0",
+    "ollama>=0.4.7",
+]
