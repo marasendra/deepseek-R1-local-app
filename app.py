@@ -4,6 +4,7 @@ from ollama import Client
 # Initialize Ollama client
 client = Client(host="http://localhost:11434")  # Default Ollama API endpoint
 
+
 @cl.on_message
 async def on_message(message: cl.Message):
     # System prompt to guide the model's behavior
@@ -19,7 +20,7 @@ async def on_message(message: cl.Message):
         stream=True,
         options={
             "temperature": 0.7,  # Adjust creativity
-            "max_tokens": 150,   # Limit response length
+            "max_tokens": 150,  # Limit response length
         },
     )
 
