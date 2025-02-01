@@ -25,17 +25,41 @@ A **100% local chatbot app** powered by **DeepSeek-R1** (via Ollama) and built w
 - Chainlit
 - Ollama Client
 
-## Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/marasendra/deepseek-R1-local-app.git
-   cd deepseek-R1-local-app
-   
-2. Install depedencies
-   ```bash
-   pip install chainlit ollama
+## Install Ollama
 
-## Usage
+1. macOS
+Open a terminal and run:
+   ```sh
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+   
+2. Windows
+Go to this link:
+`https://ollama.com/download/windows`
+
+### Verifying Installation
+After installation, verify that Ollama is installed by running:
+```sh
+ollama --version
+```
+
+### Pulling a Model
+To download a model, use the following command:
+```sh
+ollama pull <model-name>
+```
+For example, to pull the **Deepseek** model:
+```sh
+ollama pull deepseek-r1:7b
+```
+
+### Running a Model
+Once the model is pulled, you can run it locally using:
+```sh
+ollama run mistral
+```
+
+## Local usage with UI
 
 1. **Start the Chainlit server**:
     ```bash
@@ -56,4 +80,6 @@ A **100% local chatbot app** powered by **DeepSeek-R1** (via Ollama) and built w
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+
 
